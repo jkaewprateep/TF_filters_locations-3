@@ -1,10 +1,12 @@
 # TF_filters_locations-3
 Tensorflow for object locators, by using Normalize feature and convolution it creates a new picture with X and Y side shadow of the picture indicate object inside and alignment information about the location. After convert the image it required only one row from the X axis and one row from the Y axis for the extract the object location reflecting to it shadow.
 
-🧸💬 By scanning you need to work on multiple scales of the pictures and multiple sizes of the observing boxes and grouping but working with the alignment shadow is require only the last row from each axis for location information and segmentation of objects in the picture is possible to do it from output array value.
+🧸💬 By scanning you need to work on multiple scales of the pictures and multiple sizes of the observing boxes and grouping but working with the alignment shadow is require only the last row from each axis for location information and segmentation of objects in the picture is possible to do it from output array value. </br>
 
-### Pro-process the image input ###
+### Pre-process the image input ###
 
+🧸💬 Two layers are used to create a small contrast image from different variances, a smaller mean with a smaller window creates a contrast result and a larger mean with a larger window is create a blur result. </br>
+🧸💬 The convolution layer is filled the image with data with the convolution size of the window edge, and create output in image format. </br>
 ```
 layer_1 = tf.keras.layers.Normalization(mean=3., variance=2.)( image_resized )
 layer_2 = tf.keras.layers.Normalization(mean=4., variance=6.)( layer_1 )
