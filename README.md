@@ -294,18 +294,18 @@ image = tf.keras.utils.array_to_img(temp3)
 </br>
 👧💬 Reflection single object image, absolute location. </br>
 🐬🥀💬 The location of the spheres are confirmed by both X and Y axis, if the information is wrong it cannot contain in both sides reflection result and it can be used in communication. </br>
-</br>
-![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/SingleObejct_detection.gif)</br>
-</br>
+
+<br>![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/SingleObejct_detection.gif)</br>
+
 👧💬 Reflection multiple object images, absolute location. </br>
 🐬🥀💬 The location of the spheres tells you whether those objects are aligned or not for 2D to 3D images. </br> 
-</br>
+<br></br>
 ![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/MultipleObject_detection.gif)</br>
 </br>
 👧💬 The game player and the result of the test running. </br>
-</br>
+<br></br>
 ![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/WaterWorld_GamePlay.gif)</br>
-</br>
+<br></br>
 👧💬 Musicians always mercy. </br>
 </br>
 ![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/Movement_detection.gif)</br>
