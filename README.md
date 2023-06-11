@@ -18,7 +18,8 @@ final_layer = tf.keras.layers.Conv2D(1, (1, 1), activation='relu')( layer_3 )
 final_layer = tf.squeeze( final_layer, axis=0, name="squeeze" )
 image_in_process = final_layer
 ```
-🐬🥀💬 One problem of the convolution image is the channel, we retain output information for each update that guarantees there is no loss of data ( object ) from our work on the screen.
+🐬🥀💬 One problem of the convolution image is the channel, we retain output information for each update that guarantees there is no loss of data ( object ) from our work on the screen. </br>
+</br>
 ![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/Image_Filters.gif)</br>
 
 ### Array counter ###
