@@ -24,6 +24,7 @@ image_in_process = final_layer
 
 ### Array counter ###
 
+🧸💬 By mathematics method we do not use search, search sort, or index function we can have a position of the object related to screen resolution by multiplying them with the range array containing the counting number. </br>
 ```
 linespace = tf.linspace(start=1, stop=125, num=125, name=None, axis=0)
 linespace = tf.cast( linespace, dtype=tf.float32 )
@@ -36,6 +37,7 @@ temp = tf.expand_dims(temp, axis=2)
 
 ### Array counter - output  ###
 
+🐑💬 The sample of the range array we use for the segment location of the object on the screen return from the action of the game library. </br>
 ```
  [[  1.]
   [  2.]
