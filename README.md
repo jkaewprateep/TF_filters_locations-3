@@ -1,5 +1,5 @@
 # TF_filters_locations-3
-Tensorflow for object locators
+Tensorflow for object locators, by using Normalize feature and convolution it creates a new picture with X and Y side shadow of the picture indicate object inside and alignment information about the location. After convert the image it required only one row from the X axis and one row from the Y axis for the extract the object location reflecting to it shadow.
 
 ### Pro-process the image input ###
 
