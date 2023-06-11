@@ -136,6 +136,37 @@ position_on_x_axis = tf.reshape( position_on_x_axis, [125, 1] )
 position_on_x_axis = tf.cast( position_on_x_axis, dtype=tf.float32 )
 ```
 
+### Reflecting position in X-Axis - output  ###
+
+```
+tf.Tensor(
+[[125.]
+ [125.]
+ [125.]
+ ...
+ [125.]
+ [ 41.]
+ [ 35.]
+ [ 34.]
+ [ 40.]
+ [ 41.]
+ [ 42.]
+ [ 79.]
+ [ 79.]
+ [ 79.]
+ [ 35.]
+ [ 36.]
+ [ 76.]
+ [ 37.]
+ [ 78.]
+ [ 76.]
+ [125.]
+ [125.]
+ [125.]
+ ...
+ [125.]], shape=(125, 1), dtype=float32)
+```
+
 ### Reflecting position in Y-Axis ###
 
 ```
@@ -145,6 +176,37 @@ position_on_y_axis = position_on_y_axis + 1.0
 
 position_on_y_axis = tf.reshape( position_on_y_axis, [125, 1] )
 position_on_y_axis = tf.cast( position_on_y_axis, dtype=tf.float32 )
+```
+
+### Reflecting position in Y-Axis - output  ###
+
+```
+tf.Tensor(
+[[125.]
+ [125.]
+ [125.]
+ ...
+ [125.]
+ [ 41.]
+ [ 35.]
+ [ 34.]
+ [ 40.]
+ [ 41.]
+ [ 42.]
+ [ 79.]
+ [ 79.]
+ [ 79.]
+ [ 35.]
+ [ 36.]
+ [ 76.]
+ [ 37.]
+ [ 78.]
+ [ 76.]
+ [125.]
+ [125.]
+ [125.]
+ ...
+ [125.]], shape=(125, 1), dtype=float32)
 ```
 
 ### Remove counters and set to 0 ###
