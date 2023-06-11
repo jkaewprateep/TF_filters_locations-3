@@ -7,7 +7,8 @@ Tensorflow for object locators, by using Normalize feature and convolution it cr
 
 🧸💬 Two layers are used to create a small contrast image from different variances, a smaller mean with a smaller window creates a contrast result and a larger mean with a larger window is create a blur result. </br>
 🧸💬 The convolution layer is filled the image with data with the convolution size of the window edge, and create output in image format. </br>
-🐑💬 Normalize layer can remove or create the edge of an object in an image with a small contrast value, and remove a lower value by leaving ambiguity data. </br>
+🐑💬 Normalize layer can remove or create the edge of an object in an image with a small contrast value, and remove a lower value by leaving ambingious data. </br>
+👧💬 Our eyes work as multiple layers combined by removed of low-dense information the high contrast is information after filtering out noises or dark tone colours. </br>
 ```
 layer_1 = tf.keras.layers.Normalization(mean=3., variance=2.)( image_resized )
 layer_2 = tf.keras.layers.Normalization(mean=4., variance=6.)( layer_1 )
