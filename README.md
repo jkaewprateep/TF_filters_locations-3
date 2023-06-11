@@ -13,6 +13,8 @@ final_layer = tf.squeeze( final_layer, axis=0, name="squeeze" )
 image_in_process = final_layer
 ```
 
+![alt text](https://github.com/jkaewprateep/TF_filters_locations-3/blob/main/Image_Filters.gif)</br>
+
 ### Array counter ###
 
 ```
