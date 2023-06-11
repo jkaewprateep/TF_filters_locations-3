@@ -66,6 +66,7 @@ temp = tf.expand_dims(temp, axis=2)
 
 ### Y-Axis ###
 
+🧸💬 The re-arranging of the object data to one side of the axis, we determine the object's location, shape, and property same as we work with an accurate function. </br>
 ```
 temp2 = tf.argsort(image_in_process, axis=1).numpy() * 1.0
 temp2 = temp2 + 1
@@ -73,6 +74,7 @@ temp2 = temp2 + 1
 
 ### Y-Axis - output ###
 
+🐑💬 This sample of the output from the new arrangement, object property is collected at one side of the image and we can obtain it with out using the scanning method. </br> 
 ```
  [[  1.]
   [  2.]
@@ -101,6 +103,7 @@ temp2 = temp2 + 1
 
 ### X-Axis ###
 
+🧸💬 The re-arranging of the object data to one side of the axis, we determine the object's location, shape, and property same as we work with an accurate function. </br>
 ```
 temp3 = tf.argsort(image_in_process, axis=0).numpy() * 1.0
 temp3 = temp3 + 1
@@ -108,6 +111,7 @@ temp3 = temp3 + 1
 
 ### X-Axis - output ###
 
+🐑💬 This sample of the output from the new arrangement, object property is collected at one side of the image and we can obtain it with out using the scanning method. </br> 
 ```
  [[  1.]
   [  2.]
@@ -136,6 +140,7 @@ temp3 = temp3 + 1
 
 ### Reflecting position in X-Axis ###
 
+🧸💬 We obtain information from the side of the image and we add 1.0 that is because we are planning ahead for the differentiate result we can add-on from these codes. </br> 
 ```
 position_on_x_axis = temp3[123:124,:,0:1]
 position_on_x_axis = tf.squeeze( position_on_x_axis, axis=2 )
@@ -147,6 +152,7 @@ position_on_x_axis = tf.cast( position_on_x_axis, dtype=tf.float32 )
 
 ### Reflecting position in X-Axis - output  ###
 
+🐑💬 The sample result is extracted from a single line of the input. </br> 
 ```
 tf.Tensor(
 [[125.]
@@ -178,6 +184,7 @@ tf.Tensor(
 
 ### Reflecting position in Y-Axis ###
 
+🧸💬 We obtain information from the side of the image and we add 1.0 that is because we are planning ahead for the differentiate result we can add-on from these codes. </br> 
 ```
 position_on_y_axis = temp3[:,123:124,0:1]
 position_on_y_axis = tf.squeeze( position_on_y_axis, axis=2 )
@@ -189,6 +196,7 @@ position_on_y_axis = tf.cast( position_on_y_axis, dtype=tf.float32 )
 
 ### Reflecting position in Y-Axis - output  ###
 
+🐑💬 The sample result is extracted from a single line of the input. </br> 
 ```
 tf.Tensor(
 [[125.]
@@ -220,6 +228,7 @@ tf.Tensor(
 
 ### Remove counters and set to 0, image segmentation ###
 
+🧸💬 For custom output ( does not require but clean looking when display as label ) </br> 
 ```
 linespace2 = tf.linspace(start=126, stop=250, num=125, name=None, axis=0)
 linespace2 = tf.cast( linespace2, dtype=tf.float32 )
@@ -230,6 +239,8 @@ position_on_x_axis = tf.where( tf.math.not_equal( linespace2, position_on_x_axis
 ```
 
 ### Remove counters and set to 0 - output, image segmentation ###
+
+🐑💬 The result from the custom output </br> 
 ```
 tf.Tensor(
 [[  0.]
@@ -274,6 +285,7 @@ tf.Tensor(
 
 ### Image to display ###
 
+🧸💬 Combined of X-axis and Y-axis images simply summing both values. </br>
 ```
 temp3 = temp3 + temp2
 temp3 = tf.cast( temp3, dtype=tf.float32 )
