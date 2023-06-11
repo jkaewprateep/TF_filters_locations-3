@@ -209,7 +209,7 @@ tf.Tensor(
  [125.]], shape=(125, 1), dtype=float32)
 ```
 
-### Remove counters and set to 0 ###
+### Remove counters and set to 0, image segmentation ###
 
 ```
 linespace2 = tf.linspace(start=126, stop=250, num=125, name=None, axis=0)
@@ -219,6 +219,49 @@ linespace2 = tf.reshape( linespace2, [125, 1] )
 position_on_y_axis = tf.where( tf.math.not_equal( linespace2, position_on_y_axis ), linespace2 , 0)
 position_on_x_axis = tf.where( tf.math.not_equal( linespace2, position_on_x_axis ), linespace2 , 0)
 ```
+
+### Remove counters and set to 0 - output, image segmentation ###
+```
+tf.Tensor(
+[[  0.]
+ [  0.]
+ [  0.]
+ ...
+ [  0.]
+ [144.]
+ [145.]
+ [146.]
+ [147.]
+ [148.]
+ [149.]
+ [150.]
+ [151.]
+ [152.]
+ [  0.]
+ [  0.]
+ [155.]
+ [156.]
+ [157.]
+ [158.]
+ [159.]
+ [160.]
+ [161.]
+ [  0.]
+ [163.]
+ [164.]
+ [165.]
+ [  0.]
+ [  0.]
+ [168.]
+ [169.]
+ [170.]
+ [171.]
+ [  0.]
+ [  0.]
+ [  0.]
+ ...
+ [  0.]], shape=(125, 1), dtype=float32)
+ ```
 
 ### Image to display ###
 
